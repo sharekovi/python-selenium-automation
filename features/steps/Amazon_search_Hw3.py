@@ -1,3 +1,5 @@
+
+         
 from selenium.webdriver.common.by import By
 from behave import given, when, then
 from time import sleep
@@ -23,8 +25,6 @@ def open_amazon(context):
          #assert actual_text == context.expected_text, f'Expected {expected_text} but got {actual_text}'
 
          context.driver.find_element(By.ID, 'ap_email')
-
-         
 
 
 
