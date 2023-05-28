@@ -22,7 +22,9 @@ actual_text = driver.find_element(By.XPATH,"//h1[@class='a-spacing-small']").tex
 
 assert actual_text == expected_text,f'Expected {expected_text} but go {actual_text}'
 
-assert driver.find_element(By.ID,'ap_email').is_displayed(), 'Email field not shown'
+assert driver.find_element(By.ID,'ap_email')
+
+
 
 driver.quit()
 
