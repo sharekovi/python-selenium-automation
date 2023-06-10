@@ -15,3 +15,5 @@ def open_amazon(context):
 def search_amazon(context, search_word):
     context.driver.find_element(*SEARCH_FIELD).send_key(search_word)
     context.driver.find_element(*SEARCH_BTN).click()
+
+
