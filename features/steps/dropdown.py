@@ -5,7 +5,7 @@ from time import sleep
 
 @given('Open amazon main page')
 def open_amazon(context):
-    context.driver.get('https://www.amazon.com/')
+    context.app.main_page.open_main_page()
 
 
 @when(' Select department alexa skills')
